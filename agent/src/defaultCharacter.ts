@@ -1,10 +1,11 @@
 import { type Character, ModelProviderName } from "@elizaos/core";
+import { notionPlugin } from "@elizaos-plugins/plugin-notion";
 
 export const defaultCharacter: Character = {
     name: "Eliza",
     username: "eliza",
-    plugins: [],
-    modelProvider: ModelProviderName.LLAMALOCAL,
+    plugins: [notionPlugin],
+    modelProvider: ModelProviderName.OPENAI,
     settings: {
         secrets: {},
         voice: {

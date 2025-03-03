@@ -6,7 +6,7 @@
 
 <div align="center">
 
-📑 [Technical Report](https://arxiv.org/pdf/2501.06781) |  📖 [Documentation](https://elizaos.github.io/eliza/) | 🎯 [Examples](https://github.com/thejoven/awesome-eliza)
+📑 [Technical Report](https://arxiv.org/pdf/2501.06781) | 📖 [Documentation](https://elizaos.github.io/eliza/) | 🎯 [Examples](https://github.com/thejoven/awesome-eliza)
 
 </div>
 
@@ -22,13 +22,13 @@
 
 ## ✨ Features
 
-- 🛠️ Full-featured Discord, X (Twitter) and Telegram connectors
-- 🔗 Support for every model (Llama, Grok, OpenAI, Anthropic, Gemini, etc.)
-- 👥 Multi-agent and room support
-- 📚 Easily ingest and interact with your documents
-- 💾 Retrievable memory and document store
-- 🚀 Highly extensible - create your own actions and clients
-- 📦 Just works!
+-   🛠️ Full-featured Discord, X (Twitter) and Telegram connectors
+-   🔗 Support for every model (Llama, Grok, OpenAI, Anthropic, Gemini, etc.)
+-   👥 Multi-agent and room support
+-   📚 Easily ingest and interact with your documents
+-   💾 Retrievable memory and document store
+-   🚀 Highly extensible - create your own actions and clients
+-   📦 Just works!
 
 ## Video Tutorials
 
@@ -36,25 +36,26 @@
 
 ## 🎯 Use Cases
 
-- 🤖 Chatbots
-- 🕵️ Autonomous Agents
-- 📈 Business Process Handling
-- 🎮 Video Game NPCs
-- 🧠 Trading
+-   🤖 Chatbots
+-   🕵️ Autonomous Agents
+-   📈 Business Process Handling
+-   🎮 Video Game NPCs
+-   🧠 Trading
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
-- [Python 2.7+](https://www.python.org/downloads/)
-- [Node.js 23+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- [pnpm](https://pnpm.io/installation)
+-   [Python 2.7+](https://www.python.org/downloads/)
+-   [Node.js 23+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+-   [pnpm](https://pnpm.io/installation)
 
 > **Note for Windows Users:** [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install-manual) is required.
 
 ### Use the Starter (Recommended for Agent Creation)
 
 Full steps and documentation can be found in the [Eliza Starter Repository](https://github.com/elizaOS/eliza-starter).
+
 ```bash
 git clone https://github.com/elizaos/eliza-starter.git
 cd eliza-starter
@@ -77,6 +78,7 @@ git checkout $(git describe --tags --abbrev=0)
 ```
 
 If you would like the sample character files too, then run this:
+
 ```bash
 # Download characters submodule from the character repos
 git submodule update --init
@@ -133,7 +135,7 @@ For detailed instructions on using the start script, including character managem
 
 ### Modify Character
 
-1. Open `packages/core/src/defaultCharacter.ts` to modify the default character. Uncomment and edit.
+1. Open `agent/src/defaultCharacter.ts` to modify the default character. Uncomment and edit.
 
 2. To load custom characters:
     - Use `pnpm start --characters="path/to/your/character.json"`
@@ -160,6 +162,7 @@ pnpm install --include=optional sharp
 ---
 
 ## Using Your Custom Plugins
+
 Plugins that are not in the official registry for ElizaOS can be used as well. Here's how:
 
 ### Installation
@@ -185,9 +188,9 @@ packages/
 
 ```json
 {
-  "dependencies": {
-    "@elizaos/plugin-example": "workspace:*"
-  }
+    "dependencies": {
+        "@elizaos/plugin-example": "workspace:*"
+    }
 }
 ```
 
@@ -210,6 +213,7 @@ packages/
 ### Deploy Eliza in one click
 
 Use [Fleek](https://fleek.xyz/eliza/) to deploy Eliza in one click. This opens Eliza to non-developers and provides the following options to build your agent:
+
 1. Start with a template
 2. Build characterfile from scratch
 3. Upload pre-made characterfile
@@ -220,13 +224,14 @@ Click [here](https://fleek.xyz/eliza/) to get started!
 
 ### Community & contact
 
-- [GitHub Issues](https://github.com/elizaos/eliza/issues). Best for: bugs you encounter using Eliza, and feature proposals.
-- [elizaOS Discord](https://discord.gg/elizaos). Best for: hanging out with the elizaOS technical community
-- [DAO Discord](https://discord.gg/ai16z). Best for: hanging out with the larger non-technical community
+-   [GitHub Issues](https://github.com/elizaos/eliza/issues). Best for: bugs you encounter using Eliza, and feature proposals.
+-   [elizaOS Discord](https://discord.gg/elizaos). Best for: hanging out with the elizaOS technical community
+-   [DAO Discord](https://discord.gg/ai16z). Best for: hanging out with the larger non-technical community
 
 ## Citation
 
 We now have a [paper](https://arxiv.org/pdf/2501.06781) you can cite for the Eliza OS:
+
 ```bibtex
 @article{walters2025eliza,
   title={Eliza: A Web3 friendly AI Agent Operating System},
@@ -242,7 +247,6 @@ We now have a [paper](https://arxiv.org/pdf/2501.06781) you can cite for the Eli
   <img src="https://contrib.rocks/image?repo=elizaos/eliza" alt="Eliza project contributors" />
 </a>
 
-
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=elizaos/eliza&type=Date)](https://star-history.com/#elizaos/eliza&Date)
@@ -250,23 +254,27 @@ We now have a [paper](https://arxiv.org/pdf/2501.06781) you can cite for the Eli
 ## 🛠️ System Requirements
 
 ### Minimum Requirements
-- CPU: Dual-core processor
-- RAM: 4GB
-- Storage: 1GB free space
-- Internet connection: Broadband (1 Mbps+)
+
+-   CPU: Dual-core processor
+-   RAM: 4GB
+-   Storage: 1GB free space
+-   Internet connection: Broadband (1 Mbps+)
 
 ### Software Requirements
-- Python 2.7+ (3.8+ recommended)
-- Node.js 23+
-- pnpm
-- Git
+
+-   Python 2.7+ (3.8+ recommended)
+-   Node.js 23+
+-   pnpm
+-   Git
 
 ### Optional Requirements
-- GPU: For running local LLM models
-- Additional storage: For document storage and memory
-- Higher RAM: For running multiple agents
+
+-   GPU: For running local LLM models
+-   Additional storage: For document storage and memory
+-   Higher RAM: For running multiple agents
 
 ## 📁 Project Structure
+
 ```
 eliza/
 ├── packages/
@@ -283,6 +291,7 @@ eliza/
 We welcome contributions! Here's how you can help:
 
 ### Getting Started
+
 1. Fork the repository
 2. Create a new branch: `git checkout -b feature/your-feature-name`
 3. Make your changes
@@ -290,14 +299,16 @@ We welcome contributions! Here's how you can help:
 5. Submit a pull request
 
 ### Types of Contributions
-- 🐛 Bug fixes
-- ✨ New features
-- 📚 Documentation improvements
-- 🌍 Translations
-- 🧪 Test improvements
+
+-   🐛 Bug fixes
+-   ✨ New features
+-   📚 Documentation improvements
+-   🌍 Translations
+-   🧪 Test improvements
 
 ### Code Style
-- Follow the existing code style
-- Add comments for complex logic
-- Update documentation for changes
-- Add tests for new features
+
+-   Follow the existing code style
+-   Add comments for complex logic
+-   Update documentation for changes
+-   Add tests for new features
